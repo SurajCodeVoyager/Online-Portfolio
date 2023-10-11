@@ -40,6 +40,12 @@
       color: rgb(144, 144, 214);
       font-size: 1.01rem;
     }
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
     .left {
       font-size: 1.5 rem;
     }
@@ -47,7 +53,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin: 80px 0;
+      margin: 130px 0;
     }
     .first-section div {
       width: 30%;
@@ -60,10 +66,39 @@
       width: 80%;
     }
     .purple {
-      color: rgb(169, 106, 228);
+      color: rgb(170, 106, 228);
+    }
+    .text-gray {
+      color: gray;
     }
     #element {
       color: rgb(169, 106, 228);
+    }
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+    }
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
+    .secondSection .box {
+      background: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+    }
+    .image-top {
+      width: 23px;
+    }
+    .vertical-title {
     }
   </style>
   <body>
@@ -91,13 +126,32 @@
           <img src="bg.png" alt="bg" />
         </div>
       </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="developer" />
+          </div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
   <script>
     var typed = new Typed("#element", {
-      strings: ["Web Developer", "E-Sports Enthusiast", "Cosplayer", "Tech-Geek"],
+      strings: [
+        "Web Developer",
+        "E-Sports Enthusiast",
+        "Cosplayer",
+        "Tech-Geek",
+      ],
       typespeed: 50,
     });
   </script>
