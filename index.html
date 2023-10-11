@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suraj - Online Portfolio</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+      text-decoration: none;
+      color: white;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    nav ul li a:hover {
+      color: rgb(144, 144, 214);
+      font-size: 1.01rem;
+    }
+    .left {
+      font-size: 1.5 rem;
+    }
+    .first-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 80px 0;
+    }
+    .first-section div {
+      width: 30%;
+    }
+    .left-section {
+      /* background-color: red; */
+      font-size: 3rem;
+    }
+    .right-section img {
+      width: 80%;
+    }
+    .purple {
+      color: rgb(169, 106, 228);
+    }
+    #element {
+      color: rgb(169, 106, 228);
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Suraj's Portfolio</div>
+        <div class="right"></div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="first-section">
+        <div class="left-section">
+          Hi, My name is <span class="purple">Suraj</span>
+          <div>and I am a</div>
+          <span id="element"></span>
+        </div>
+        <div class="right-section">
+          <img src="bg.png" alt="bg" />
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "E-Sports Enthusiast", "Cosplayer", "Tech-Geek"],
+      typespeed: 50,
+    });
+  </script>
+</html>
